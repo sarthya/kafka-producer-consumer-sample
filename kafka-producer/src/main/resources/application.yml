@@ -4,3 +4,10 @@ server:
 kafka:
   producer:
     bootStrapServer: localhost:9092
+#below properties are supported by framework and need not to create producer factory if defined.
+spring:
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
