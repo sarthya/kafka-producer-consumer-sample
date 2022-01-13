@@ -1,0 +1,6 @@
+server:
+  port: 8090
+
+kafka:
+  producer:
+    bootStrapServer: localhost:9092
